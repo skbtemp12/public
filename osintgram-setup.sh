@@ -53,7 +53,7 @@ chmod +x osintgram ;
 
 echo "
 
-#!/bin/bash
+#!/bin/sh
 
 cd ~/.Osintgram ;
 
