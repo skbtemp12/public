@@ -44,7 +44,7 @@ exit" > osintgram ;
 
 chmod +x osintgram ;
 
-cp osintgram /usr/bin ;
+sudo cp osintgram /usr/bin ;
 
 osintgram ;
 
