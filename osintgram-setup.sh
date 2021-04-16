@@ -3,7 +3,7 @@
 # Automation of osintgram setup and installation
 
 cd ~ ;
-git clone www.github.com/Datalux/Osintgram.git ;
+git clone https://github.com/Datalux/Osintgram.git ;
 mv Osintgram .Osintgram ;
 cd ~/.Osintgram ;
 sudo apt install python3 python3-pip -y ;
