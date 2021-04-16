@@ -68,7 +68,7 @@ exit
 
 # Setting up one click osintgram 
 
-sudo cp osintgram /usr/bin ;
+sudo mv osintgram /usr/bin ;
 osintgram ;
 
 exit
