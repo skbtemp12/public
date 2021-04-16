@@ -59,7 +59,9 @@ cd ~/.Osintgram ;
 
 # Input prompt
 
-read -p ' Enter target Instagram UserID or UserName : ' TARGET
+echo 
+echo 
+read -p 'Enter target Instagram UserID or UserName : ' TARGET;
 python3 main.py $\TARGET ;
 
 exit
