@@ -6,7 +6,7 @@ cd ~ ;
 git clone https://github.com/Datalux/Osintgram.git ;
 mv Osintgram .Osintgram ;
 cd ~/.Osintgram ;
-sudo apt install python3 python3-pip -y ;
+sudo apt install python3 python3-pip libncurses5-dev -y ;
 pip3 install -r requirements.txt -y ;
 
 # Setup credentials
