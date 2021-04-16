@@ -60,7 +60,7 @@ cd ~/.Osintgram ;
 # Input prompt
 
 read -p ' Enter target Instagram UserID or UserName : ' TARGET
-python3 main.py $TARGET ;
+python3 main.py $\TARGET ;
 
 exit
 
