@@ -23,11 +23,10 @@ echo "[Credentials]
 username = $User 
 password = $Passwd" > credentials.ini ;
 
-# Setting up one click Osintgram
+# Making Osintgram Script
 
 cd ~/.Osintgram ;
 
-# Making osintgram script
 
 echo "#!/bin/bash
 
@@ -35,11 +34,13 @@ cd ~/.Osintgram ;
 
 # input prompt
 
-read -p " Enter target IG ID or UserName :" TARGET
+read -p " Enter target Instagram UserID or UserName :" TARGET
 
 python3 main.py $TARGET ;
 
 exit" > osintgram ;
+
+# Setting up one click osintgram 
 
 chmod +x osintgram ;
 
