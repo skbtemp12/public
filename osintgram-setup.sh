@@ -9,6 +9,15 @@ echo "\e[1;33m
       \e[0m" ;
 
 cd ~ ;
+
+# Old Osintgram Backup
+
+cp Osintgram Old_Ointgram ;
+cp .Osintgram Old_Osintgram_Hidden ;
+rm -rf Osintgram .Osintgram ;
+
+# Cloning and Later
+
 git clone https://github.com/Datalux/Osintgram.git ;
 mv Osintgram .Osintgram ;
 cd ~/.Osintgram ;
