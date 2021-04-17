@@ -15,13 +15,11 @@ echo "\e[1;33m
 	Dear $USER, Please Enter Your Sudo Password.
 
       \e[0m" ;
-
+cd ~ ;
 sudo apt install wget git python3 python3-pip libncurses5-dev -y ;
-pip3 install -r requirements.txt ;
 
 # Old Osintgram Backup
 
-cd ~ ;
 cp Osintgram Old_Osintgram ;
 cp .Osintgram Old_Osintgram_Hidden ;
 rm -rf Osintgram .Osintgram ;
@@ -31,6 +29,8 @@ echo "\e[1;33m
 	Dear $USER, Old Osintgram is Backed Up in Home Folder.
 
       \e[0m" ;
+
+echo "Old Osintgram files is Backed up if it was Installed Before "
 read -p "Do you want to Delete the Backup files ? [ type yes or no ] : " ANSWER
 if [ $ANSWER = "yes" ];
 then
@@ -43,6 +43,7 @@ echo ""
 git clone https://github.com/Datalux/Osintgram.git ;
 mv Osintgram .Osintgram ;
 cd ~/.Osintgram ;
+pip3 install -r requirements.txt ;
 
 # Setup credentials
 
@@ -70,7 +71,6 @@ password = $Passwd" > credentials.ini ;
 # Making Osintgram Script
 
 cd ~/.Osintgram ;
-rm osintgram ;
 wget https://raw.githubusercontent.com/skbtemp12/shell/main/osintgram ;
 chmod +x osintgram ;
 
