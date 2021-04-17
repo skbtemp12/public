@@ -15,6 +15,7 @@ echo "\e[1;33m
 	Dear $USER, Please Enter Your Sudo Password.
 
       \e[0m" ;
+      
 cd ~ ;
 sudo apt install wget git python3 python3-pip libncurses5-dev -y ;
 
@@ -26,11 +27,11 @@ rm -rf Osintgram .Osintgram ;
 
 echo "\e[1;33m
 
-	Dear $USER, Old Osintgram is Backed Up in Home Folder.
+	Dear $USER, Old Osintgram Files are Backed Up in Home Folder.
+	    [ if it was installed before ]
 
       \e[0m" ;
 
-echo "Old Osintgram files is Backed up if it was Installed Before "
 read -p "Do you want to Delete the Backup files ? [ type yes or no ] : " ANSWER
 if [ $ANSWER = "yes" ];
 then
