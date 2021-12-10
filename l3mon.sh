@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update -y;
-sudo apt install npm unzip -y;
+sudo apt install npm unzip python3 python3-pip -y;
 sudo apt install openjdk-8-jre nano openvpn -y;
 sudo npm install pm2 -g;
 wget https://github.com/D3VL/L3MON/releases/download/1.1.2/L3MON-v1.1.2.zip;
