@@ -1,14 +1,15 @@
 #!/bin/bash
 sudo apt update -y;
+sudo apt install npm unzip -y;
 sudo apt install openjdk-8-jre nano -y;
-npm install pm2 -g;
+sudo npm install pm2 -g;
 wget https://github.com/D3VL/L3MON/releases/download/1.1.2/L3MON-v1.1.2.zip;
 unzip L3MON-v1.1.2.zip;
-npm install;
-npm install -g npm;
-pm2 start index.js;
-pm2 startup;
-pm2 stop index;
+sudo npm install;
+sudo npm install -g npm;
+sudo pm2 start index.js;
+sudo pm2 startup;
+sudo pm2 stop index;
 echo "
 
 
